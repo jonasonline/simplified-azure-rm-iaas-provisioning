@@ -1,0 +1,80 @@
+{
+    "subscriptionName": "Test subscription",
+    "administratorUserName": "serveradmin",
+    "resourceGroups": [
+        {
+            "groupName": "resource group name",
+            "location": "location name",
+            "storageAccounts": [
+                {
+                    "storageAccountName": "storage account name",
+                    "sku": "sku name",
+                    "kind": "Storage"
+                },
+                {
+                    "storageAccountName": "storage account name",
+                    "sku": "sku name",
+                    "kind": "Storage"
+                }
+            ],
+            "availabilitySets": [
+                {
+                    "availabilitySetName": "avaiability set name"
+                }
+            ],
+            "vms": [
+                {
+                    "serverName": "vm name",
+                    "size": "azure rm size name",
+                    "sku": "sku name"
+                },
+                {
+                    "serverName": "vm name",
+                    "size": "azure rm size name",
+                    "sku": "sku name",
+                    "availabilitySet": "avaiability set name",
+                    "operatingSystemDisk": {
+                        "storageAccountName": "storage account name",
+                        "containerName": "container name",
+                        "diskName": "disk name"
+                    },
+                    "networkInterfaces": [
+                        {
+                            "networkInterfaceName": "network interface name",
+                            "publicIpAddressName": "public ip address name",
+                            "vNetName": "virtual network name",
+                            "subNetName": "subnet name",
+                            "networkPrefix": "0.0.0.0/24"
+                        }
+                    ],
+                    "dataDisks": [
+                        {
+                            "storageAccountName": "storage account name",
+                            "containerName": "container name",
+                            "diskName": "disk name",
+                            "size": 512
+                        }
+                    ]
+                },
+                {
+                    "serverName": "vm name",
+                    "size": "azure rm size name",
+                    "sku": "sku name",
+                    "availabilitySet": "avaiability set name"
+                },
+                {
+                    "serverName": "vm name",
+                    "size": "azure rm size name",
+                    "sku": "sku name",
+                    "availabilitySet": "avaiability set name"
+                },
+                {
+                    "serverName": "vm name",
+                    "size": "azure rm size name",
+                    "sku": "sku name",
+                    "availabilitySet": "avaiability set name"
+                }
+            ]
+        }
+    ]
+}
